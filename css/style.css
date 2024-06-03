@@ -1,0 +1,58 @@
+:root{
+    --main-color:#7b5244;
+    --font-color:gray;
+}
+/*common*/
+.text-style{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.text-position{
+    text-align: center;
+}
+.section-padding{
+    padding: 40px 0;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "PT Sans", sans-serif;  
+    /* height: 4000px;   */
+}
+.container{
+    width: 80% ;
+    margin: auto;
+}
+/*header section*/
+.header-section-title{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.header-section .line{
+    width: 60px;
+    height: 3px;
+    background-color: var(--main-color);
+    display: block;
+    margin: auto;
+    transition: width 0.5s;
+}
+.header-section:hover .line{
+    width: 70px;
+}
+/*logo-img*/
+.logo-img{
+display: flex;
+justify-content: space-around;
+}

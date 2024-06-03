@@ -1,0 +1,138 @@
+footer{
+    width: 100%;
+    background-color: black;
+}
+.footer-items{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 30px;
+    margin-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+.footer-item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 30px;
+}
+.footer-logo{
+    width: 40%;
+}
+.footer-logo img{
+width: 100%;
+}
+.footer-desc{
+    color: var(--font-color);
+    line-height: 1.4;
+    margin: 30px 0;
+}
+.download-section{
+    display: flex;
+    margin-top: 15px;
+}
+.appstore-download{
+    position: relative;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    /* width: 50%; */
+    width: 40%;
+    padding-left: 30px;
+    text-align: center;
+    padding-top: 5px;
+    height: 55px;
+    margin-right: 10px;
+    
+}
+.appstore-download i.icon{
+    position: absolute;
+    top: 10;
+    left: 10;
+    color: #c1c5cb;
+}
+.appstore-title{
+    font-weight: normal;
+    color: #ded1d1;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+.appstore-link{
+    text-decoration: none;
+    color: #ded1d1;
+    font-size: 18px;
+    font-weight: normal;
+}
+/**/
+.googleplay-download{
+    position: relative;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    /* width: 50%; */
+    width: 40%;
+    padding-left: 30px;
+    text-align: center;
+    padding-top: 5px;
+    height: 55px;
+    
+}
+.googleplay-download i.icon{
+    position: absolute;
+    top: 10;
+    left: 10;
+    color: #7798fb;
+}
+.googleplay-title{
+    font-weight: normal;
+    color: #ded1d1;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+.googleplay-link{
+    text-decoration: none;
+    color: #ded1d1;
+    font-size: 18px;
+    font-weight: normal;
+}
+.footer-item2{
+    padding-top: 25px;
+}
+.footer-item2-title{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-item2-list li{
+    margin: 10px 0;
+    display: block;
+}
+.footer-item2-list li a{
+text-decoration: none;
+color: var(--font-color)
+}
+.footer-item3{
+    padding-top: 25px;
+}
+.footer-item3 i.icon{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer-item3-list li{
+    margin: 0 5px;
+}
+.footer-item3-list li i{
+    color: var(--font-color);
+}
+.footer-item3-form{
+    margin: 40px 0;
+    padding-right: 40px;
+    position: relative;
+    padding: 2px 0;
+    border-bottom: 1px solid var(--font-color);
+}
+.footer-item3-form input{
+    background-color: black;
+    border: 0;
+    width: 100%;  
+    text-transform: capitalize;
+}

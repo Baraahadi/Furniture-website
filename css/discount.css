@@ -1,0 +1,78 @@
+.discount{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:25px
+ }
+ .discount-info{
+ background-color: #f0e2dd;
+ grid-column-start: 1;
+ grid-column-end: 3;
+ padding: 30px;
+ position: relative;
+ }
+ .discount-top{
+     margin-bottom: 20px;
+     padding-left: 60px;
+     position: relative;
+     height: 60px;    
+ }
+ .discount-top i.icon{
+     position: absolute;
+     top: 0;
+     left: 0;
+    width: 10%;
+   display: block;
+   height: 60px;
+   font-size: 50px;
+   color: var(--main-color);
+ }
+ .discount-text{
+     color: var(--font-color);
+ }
+ .discount-desc{
+     line-height: 1.6;
+     color: var(--font-color);
+ }
+ .threelines{
+   position: absolute;
+     bottom: 40px;
+     right: 20px;
+ }
+ .threelines span{
+     width: 60px ;
+     height: 3px;
+     background-color: #888787;
+   margin: 0 3px;
+     display: inline-block;
+     cursor: pointer;
+ }
+ .threelines span.active{
+     background-color: var(--main-color);
+ }
+ .threelines span:hover{
+     background-color: var(--main-color);
+ }
+ .discount-item img{
+ width: 100%;
+ transition: transform 0.4s ease;
+ }
+ .discount-item:hover img{
+     transform: scale(1.1); 
+ }
+ .discount-item{
+     position: relative;
+ }
+ .discount-item-info{
+     position: absolute;
+     top: 30px;
+     left: 15px;
+ }
+ .discount-item-title{
+     color: var(--font-color);
+     font-weight: normal;
+ }
+ .discount-item-text{
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 

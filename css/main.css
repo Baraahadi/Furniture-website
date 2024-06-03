@@ -1,0 +1,50 @@
+.firstsection{
+    margin: 1%;
+    position: relative;
+}
+.firstsection img{
+    width: 100%; 
+}
+.firstsection .backimage{
+    transform: scale3d(0,1,1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+transition: transform 0.5s;
+transform-origin: left;
+}
+.frontimage:hover .backimage{
+    transform: scale3d(1,1,1);
+}
+.firstsection .mainbanner{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s;
+}
+.firstsection:hover .mainbanner{
+    visibility: visible;
+    opacity: 1;
+}
+.firstsection .mainbanner-text{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+   background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    margin-bottom: 5px;
+}
+.firstsection .mainbanner-text2{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:#333;
+    position: absolute;
+    left: 52%;
+    bottom: 0%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}

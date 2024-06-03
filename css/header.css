@@ -1,0 +1,128 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logoimage{
+    flex: 1;
+    text-align: left;
+}
+header .logoimage img{
+    width: 50%;
+}
+header nav{
+    flex: 3;
+}
+header nav .navbarlist li{
+    margin: 0 2%;
+}
+header nav .navbarlist li .link-item{
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    padding: 5px; 
+}
+header nav .navbarlist li.first{
+    position: relative;
+}
+header nav .navbarlist li.first:hover .dropdown{
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+header nav .navbarlist li.first .dropdown{
+    position: absolute;
+    width: 520;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-top: 32px;
+    border: 3px solid var(--main-color);
+    transform: scale(0);
+    transition: transform 0.5s , visibility 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: left;
+    z-index: 10;
+}
+header nav .navbarlist li.first .dropdown .dropdown-list{
+display: table-cell;
+width: 150px;
+}
+header nav .navbarlist li.first .dropdown .dropdown-list li{
+    display: block;
+    text-align: left;
+   line-height: 1.9;
+}
+header nav .navbarlist li.first .dropdown .dropdown-list li.active{
+    color: var(--main-color);
+    font-weight: bold;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 10px;
+}
+header nav .navbarlist li.first .dropdown .dropdown-list li.active a{
+    color: var(--main-color);
+}
+header nav .navbarlist li.first .dropdown .dropdown-list a{
+text-decoration: none;
+text-transform: capitalize;
+display: table-cell;
+color: black
+}
+header nav .navbarlist li .link-item:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0 3px;
+    border-style: solid;
+    border-color: var(--main-color);
+    width: 100%;
+    height: 105%;
+    transform: scale3d(1, 0 ,1);
+    transition: transform 0.2s;
+}
+header nav .navbarlist li .link-item:hover:before{
+    transform: scale3d(1,1,1);
+}
+header nav .navbarlist li .link-item:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 3px 0;
+    border-style: solid;
+    border-color: var(--main-color);
+    width: 106%;
+    height: 94%;
+    transform: scale3d(0, 1 ,1);
+    transition: transform 0.2s;
+    transition-delay: 0.2s;
+    transform-origin: left;
+}
+header nav .navbarlist li .link-item:hover:after{
+    transform: scale3d(1,1,1);
+}
+header .loginicons{
+    text-align: right;
+    flex:1;
+}
+
+header .loginicons .loginlist li {
+margin: 0 8px;
+text-transform: capitalize;
+font-weight: bold;
+ color: #333;
+}
+header .loginicons .loginlist li i.icon
+{
+    padding: 0 2px;
+}
+header .loginicons .loginlist li i.icon:after{
+    content: "0";
+    border-radius: 50%;
+    background-color:var(--main-color);
+    color: white;
+    font-size: 15px;
+    padding: 1px 4px;
+    margin-left: -5px;
+}

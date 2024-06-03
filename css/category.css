@@ -1,0 +1,48 @@
+.category{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    position: relative;
+}
+.category-item img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.category-text{
+    color: var(--font-color);
+    margin-bottom: 5px;
+}
+.category .mainbanner{
+    visibility: visible;
+    opacity: 1;
+}
+.category .mainbanner-bollet{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+   background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.category .mainbanner-bollet2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:var(--main-color);
+    position: absolute;
+    left: 52%;
+    bottom: 0%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.mainbanner-bollet:hover{
+transform: scale(1.5,1.5);
+}
+.mainbanner-bollet:hover .mainbanner-bollet2{
+    background-color: #333;
+}
